@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #2C3540
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 5rem auto;
+    color: #E5E5E5;
+    outline: 0.5rem solid #2C3540;
+    outline-offset: -1.5rem;
+    outline-style: double;
+    padding: 2rem;
+    background-color: #18222B;
+}
+
+/* Header */
+header {
+    background-image: url(imagecompressor/DSC00942\ copy-min.jpg);
+    background-size: cover;
+    background-position: 0% 60%;
+    width: auto;
+    color: #E5E5E5;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 0;
+    border-radius: 1rem;
+}
+
+header img{
+    width: 50%;
+    height: auto;
+}
+
+h1 {
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    text-align: left center;
+    font-size: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2, h3, p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E5E5E5;
+}
+
+p {
+    padding: 2rem;
+}
+
+h2 p{
+    text-align: center;
+}
+
+
+h2 {
+    color:#E5E5E5;
+    padding-left: 2rem;
+}
+
+h3 {
+    color: #E5E5E5;
+    padding-left: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 3rem;
+}
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+nav a {
+    color: #44a4a4;
+    text-decoration: none;
+}
+
+/* Portfolio Section Styles */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 50px;
+  scale: 80%;
+  padding-bottom: 1rem;
+  margin-bottom: 60rem;
+}
+
+.portfolio-item {
+  position: relative; /* Allows absolute positioning for the images */ 
+}
+
+.twentytwenty-container img {
+  width: 50%; 
+  height: auto;  
+  position: absolute; /* Images are stacked on top of each other */
+  top: 0;
+  left: 0;
+  size: 100%;
+}
+
+.twentytwenty-container img:first-child { /* The 'before' image */
+    opacity: 1; /* Initially fully visible */ 
+}
+
+.twentytwenty-container img:last-child { /* The 'after' image */
+  opacity: 0;  /* Initially hidden */
+  transition: opacity 2s; /* Smooth transition */
+}
+
+.twentytwenty-container:hover img:last-child {
+    opacity: 1; /* Make the 'after' image visible on hover */
+}
+
+
+.portfolio-item img{
+    position: absolute;
+}
+
+
+.after {
+    opacity: 0%;
+    transition: 2s;
+}
+
+.after:hover {
+    opacity: 100%;
+    transition: 2s;
+}
+
+/* Portfolio Section */
+
+.Photography {
+    background-color: #0A0F14;
+    padding: 1rem;
+    border: solid 1rem #0A0F14;
+    outline: solid 0.5rem #0A0F14;
+}
+
+.Photography img:hover{
+    scale: 120%;
+    transition: 1s;
+}
+
+.Photography img {
+    transition: 1s;
+}
+
+.Photography h2 {
+    padding-left: 1rem;
+}
+
+.portfolio-item {
+color: #E5E5E5;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border: solid 0.1rem #44a4a4;
+    outline: solid 0.1rem #44a4a4;
+    outline-offset: 3px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    grid-gap: 50px;
+    padding: 10px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio when resizing */
+}
+
+#dad img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #0A0F14;
+    outline: #0A0F14 solid 2rem;
+}
+
+ul {
+    display: inline-block;
+    list-style: circle;
+    color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: large;
+    color: #44a4a4;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #0A0F14;
+    padding: 10px;
+    outline: solid 2rem #0A0F14;
+}
+
+.skills-item {
+    text-align: center;
+    color: #E5E5E5;
+    outline: 0.5rem solid #2C3540;
+    outline-offset: -1.5rem;
+    outline-style: double;
+    padding: 2rem;
+    background-color: #18222B;
+}
+
+.skills-item ol{
+    color: #44a4a4;
+    text-align: left;
+}
+
+/* Responsive Adjustments*/
+@media screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+}
+
+footer a[href="mailto:"] {
+    color: #E5E5E5;
+}
+
+a{
+    text-decoration-color: #E5E5E5;
+    color: #E5E5E5;
+}
+
+.container p{
+    padding: 0.1rem;
+    padding-left: 1rem;
+    text-decoration: none;
+}
+
+footer p {
+    color: #18222B;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
